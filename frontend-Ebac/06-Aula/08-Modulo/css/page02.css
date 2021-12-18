@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../images/imagefundo.jpg);
+    font-family: 'Raleway', sans-serif;
+}
+/*Cabeçalho*/
+header{
+    background-color: #343434;
+    width: 100%;
+    height: 8rem;
+    display: inline-table;
+}
+
+#logo img{
+    float: left;
+    padding: .9rem;   
+}
+.header-anun h2{
+    color: #ABFF24;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+/*Navegação*/
+nav{
+   background-color: rgb(255, 255, 255); 
+   width: 100%;
+   height: 4rem; 
+   display: inline-table;
+   border-bottom: solid rgba(95, 94, 94, 0.3);
+}
+.navegacao a:hover{
+    color: #343434;
+    font-style: italic;
+    font-size: medium;
+}
+a{
+    text-decoration: none;  
+}
+
+ul{
+  
+   display: flex;
+}
+li:hover{
+    background-color: #ABFF24;
+    padding: 1.5rem;
+    margin-top: -1rem;
+}
+li{
+    padding: .4rem;
+    list-style: none;
+}
+.navegacao{
+   float: left;
+   margin-top: 1rem;
+}
+#divBusca img, input, button{  
+    border: solid #ABFF24;
+}
+#divBusca{
+    float: right;
+    height: 1.4rem;
+    padding-right: .5rem;
+    display: flex;
+    margin: 1.4rem auto;
+}
+/*Corpo*/
+section{
+    background-color: rgba(255, 255, 255, .9);
+    margin-top: -0.1rem;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.container01, .container02{
+    width: 100%;
+    text-align: center;
+}
+.car01, .car02{
+    padding: .7rem;
+    width: 28%;
+    display: inline-table;
+}
+.car01 img, .car02 img{
+    box-shadow: .5rem .5rem 1.5rem rgba(61, 60, 60, 0.8);
+    border-radius: .5rem;
+}
+/*Sobre*/
+article{
+    background-image: url(../images/bannerfundo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#sobre h3{
+    text-align: center;
+    padding-top: .3rem;
+}
+#sobre{
+    background: rgba(255, 255, 255, .5);
+}
+#sobre p{
+    font-size: .7rem;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: .2rem;
+}
+
+/*Rodapé*/
+footer{
+    background-color: #343434;
+    color: rgb(255, 255, 255);
+    height: 3.5rem;
+    display: grid;
+    clear: both;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: .8rem;
+}
+
+@media (max-width: 580px) {
+    header #logo, .header-anun, nav .navegacao, #divBusca {
+      width: 100%;
+      height: auto;
+    }
+  }

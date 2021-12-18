@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {  
+    height: 100vh;
+    background-color: rgb(255, 255, 255);;
+    overflow: overlay;
+}
+a, ul, li{
+    list-style: none;
+    text-decoration: none;
+    padding-left: .2rem;
+    padding-top: 0.2rem;
+    color: #684f36;
+}
+li:hover{
+    background-color: #fffcff;
+    transition: 1s;
+    text-align: center;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: rgb(255, 255, 255);
+    display: table;
+    width: 100%;
+    box-shadow: 0px 1px 0px;
+    margin-bottom: 0.5rem;
+}
+
+header img{
+    float: left; 
+    padding: 1.2rem;
+}
+p{
+    float: right;
+    padding: 1.5rem;
+}
+
+.coluna{
+   width: 33.3%;
+   float: left;
+   display: block;
+}
+.coluna img, p{
+    max-width: 100%;
+}
+
+nav {
+    background-image: url(../images/coffee_fundo.png);
+    width: 20%;
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+section {
+    background-color: transparent;
+    width: 80%;
+    float: left;
+    height: auto;
+    box-sizing: border-box; /* considera o padding e border na largura e altura */
+}
+article{
+    padding-left: 2rem;
+}
+.colunas{
+    width: 100%;
+    float: left;
+    box-shadow: 0px 1px 0px;
+    margin-bottom: 0.5rem;
+}
+.map_picture{
+    display: block;
+    
+}
+picture img{
+    width: 58%;
+    height: 360px;
+}
+iframe{
+    width: 40%;
+    height: 360px;
+}
+
+footer{
+    background-color: transparent;
+    box-shadow: 0px -1px 0px;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+.rodape{
+    padding-top: 1rem;
+}
+
+@media (max-width: 770px) {
+    header, nav, section, article, .colunas, .map_picture{
+        width: 100%;
+        height: auto;
+    }
+    ul{
+        display: flex;
+    }
+    nav{
+        height: 4rem;
+        box-shadow: 0px 1px 0px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 425px){
+    header p{
+        float: left;
+    }
+    .colunas, .coluna, iframe{
+        width: 100%;
+        height: auto;
+        min-width: 320px;
+    }
+}

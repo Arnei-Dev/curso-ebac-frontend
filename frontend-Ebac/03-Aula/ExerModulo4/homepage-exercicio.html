@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Mario Dias Homepage</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			  background-color: #f1f1f1;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			.imge img {
+				border-radius: 50%;
+			}
+
+			.imge {
+				width: 20%;
+				float: left;
+			}
+
+			.imge h2 {
+				text-align: center;
+			}
+
+			.texto {
+				width: 80%;
+				float: left;
+				padding: 50px;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>My Homepage - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas Concluídas</h3>
+				<ul>
+					<li><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/arnei-dias-8ab503142/" target="_blank">LinkedIn</li>
+					<li><a href="https://github.com/Arnei-Dev" target="_blank">My GitHub</li>
+				</ul>
+			</nav>
+
+			<article>
+                <div class="imge"><img src="https://media-exp1.licdn.com/dms/image/D4D35AQHw2nopacLi5Q/profile-framedphoto-shrink_200_200/0/1632058618741?e=1635285600&v=beta&t=T-wanpNaF9LRMdmRKIZh8NU_ePj3KWQEpQvHaaVnMTk" alt="Arney Dias">
+				
+				   <h2>Mário Dias</h2>	
+				   
+			    </div>
+				<div class="texto">
+					<p>Formação técnica em mecânica de aeronaves, mas que descobriu na tecnologia, uma paixão por desenvolvimento de software. <br>
+				    Atualmente, estudante de TI e focando aprendizado em Desenvolvedor Java Full Satck na <strong>EBAC</strong> </p>
+				</div>
+			
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Developed by Mário Dias</p>
+		</footer>
+		
+	</body>
+</html>

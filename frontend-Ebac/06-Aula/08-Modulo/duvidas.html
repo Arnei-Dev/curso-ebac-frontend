@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/duvidas.css">
+	</head>
+	<body>
+
+		<header>
+			<h2>Shopping Car Multimarcas</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul class="navegacao">
+					<li><a href="./page02.html">Home</a></li>
+					<li><a href="./vendas.html">Vendas</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Duvidas</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual marca você prefere?</label>
+							<input type="radio" name="linguagens" value="html"> Chevrole
+							<input type="radio" name="linguagens" value="css"> Volkswagen
+							<input type="radio" name="linguagens" value="javascript"> Honda
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais dessas marcas você já teve?</label>
+							<input type="checkbox" name="linguagens" value="html"> Chevrole
+							<input type="checkbox" name="linguagens" value="css"> Volkswagen
+							<input type="checkbox" name="linguagens" value="javascript"> Honda
+							<input type="checkbox" name="linguagens" value="opcao"> Nenhum
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit" >
+					</div>
+					
+
+				</form>
+
+				
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Mário Dias</p>
+		</footer>
+		
+	</body>
+</html>

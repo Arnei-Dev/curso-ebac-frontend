@@ -1,0 +1,80 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #ABFF24;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: #343434;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  background-image: url(../images/vendas.jpg);
+  background-repeat: no-repeat;
+  height: 16.5rem;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  opacity: .7;
+}
+h1, p{
+  width: 40%;
+  font-size: .7rem;
+}
+a{
+  text-decoration: none;
+  color: #ABFF24;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ABFF24;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 5rem;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
