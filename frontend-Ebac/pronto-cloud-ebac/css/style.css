@@ -115,7 +115,18 @@ section article{
    float: left;
    width: 70%;
 }
+img{
+   max-width: 100%;
+   height: auto;
+}
 
+#tenho-interesse{
+   background-color: #739fc5;
+   width: 100%;
+}
+#tenho-interesse form, .cog-form__container, .cog-form__content{
+   background-color: #739fc5 !important;
+}
 footer{
    background-color: #254159;
    display: block;
