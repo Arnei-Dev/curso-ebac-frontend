@@ -146,12 +146,7 @@ footer p{
 }
 
 @media (max-width: 600px) {
-   nav, article, li, a {
+  section nav, section article {
       width: 100%;
-      height: auto;
    }
-   section{
-      display: grid;
-   }
-
  }
