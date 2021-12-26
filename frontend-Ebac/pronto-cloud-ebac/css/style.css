@@ -12,7 +12,7 @@ body{
 
 .main-container{
    display: block;
-   width: 100vw;
+   width: 100%;
    margin: 0 auto;
 }
 
@@ -22,13 +22,18 @@ body{
    padding: 20px;
    width: 100%;
    margin: 0 auto;
+   padding-right: 0;
+}
+
+.article{
+   width: 95%;
 }
 
 header{ 
     background: #fff;
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px;
     float: left;
     border-bottom: 1px solid #254159;
 }
@@ -79,7 +84,7 @@ section{
     background-color: #fff;
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px;
     float: left;
     font-size: 1.5rem;
 }
@@ -110,7 +115,6 @@ nav a:hover{
 }
 
 section article{
-    
    display: block;
    float: left;
    width: 70%;
@@ -133,10 +137,21 @@ footer{
    color: #ffffff;
    float: left;
    width: 100%;
-   padding: 20px;
+   padding: 20px 0px;
 }
 
 footer p{
     color: #ffffff;
     font-size: 1.4rem;
 }
+
+@media (max-width: 600px) {
+   nav, article, li, a {
+      width: 100%;
+      height: auto;
+   }
+   section{
+      display: grid;
+   }
+
+ }
