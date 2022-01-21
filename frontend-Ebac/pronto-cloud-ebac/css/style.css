@@ -152,7 +152,6 @@ footer p{
  }
 
  #banner {
-<<<<<<< HEAD
     background-image: url(../imges/banner.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -225,16 +224,6 @@ footer p{
     font-size: 1.3rem;
  }
 
- .button-cta2,
- .button-cta3 {
-=======
-   background-image: url(../imges/banner.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   width: 100%;
-   height: 80vh;
-}
 
 .legenda-container {
    width: 30vw;
@@ -257,7 +246,6 @@ footer p{
 }
 
 .button-cta {
->>>>>>> main
    background-color: orangered;
    color: #fff;
    font-size: 1.8rem;
@@ -269,31 +257,8 @@ footer p{
    font-weight: 300;
    display: inline;
    border-radius: 25px;
-<<<<<<< HEAD
     float: left;
  }
-
- @media (max-width: 840px) {
-   #saiba-mais img, #saiba-mais p {
-      width: 100%;
-   }
-  }
-
- @media (max-width: 450px) {
-   .legenda-container h4, .legenda-container h5, .button-cta {
-       font-size: .8rem;  
-    }
-    #saiba-mais h1 {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    #saiba-mais img, #saiba-mais p {
-       width: 100%;
-    }
-  }
-=======
-   float: right;
-}
 
 #saiba-mais {
    background-color: #eaeff3;
@@ -359,4 +324,3 @@ dd {
       width: 100%;
    }
  }
->>>>>>> main
